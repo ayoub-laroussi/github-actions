@@ -4,7 +4,7 @@ title: "[FEATURE] Décrivez votre idée"
 labels:
   - enhancement
 body:
-  - type: yml
+  - type: markdown
     attributes:
       value: |
         Merci de partager vos idées pour améliorer ce projet !

@@ -1,47 +1,27 @@
-name: Bug report
-description: Signaler un problème dans le projet
-title: "[BUG] Décrivez le problème"
+name: Bug Report
+description: Signaler un bug rencontré dans le projet
+title: "[BUG] Décrivez brièvement le problème"
 labels:
   - bug
 body:
   - type: markdown
     attributes:
       value: |
-        Merci de nous aider à améliorer le projet en signalant ce problème !
+        Merci de signaler un bug ! Veuillez remplir les sections ci-dessous pour nous aider à le résoudre plus rapidement.
 
   - type: input
-    id: description
+    id: summary
     attributes:
-      label: Description du bug
-      description: Décrivez le problème rencontré.
-      placeholder: Entrez une description claire du problème.
-      required: true
+      label: Résumé du bug
+      description: Résumez le bug en une phrase.
+      placeholder: "Exemple : L'application plante lors du clic sur 'Enregistrer'."
 
   - type: textarea
     id: steps_to_reproduce
     attributes:
-      label: Étapes pour reproduire
-      description: Liste des étapes nécessaires pour reproduire le problème.
-      placeholder: Expliquez les étapes (1. Faites ceci, 2. Cliquez sur cela, ...).
-      required: true
-
-  - type: input
-    id: expected_behavior
-    attributes:
-      label: Comportement attendu
-      description: Décrivez ce que vous attendiez au lieu du bug rencontré.
-      placeholder: Le comportement attendu.
-
-  - type: input
-    id: environment
-    attributes:
-      label: Environnement
-      description: Informations sur votre environnement (OS, navigateur, version...).
-      placeholder: Exemple : macOS, Firefox 105.0, version 1.2.3.
-
-  - type: textarea
-    id: additional_info
-    attributes:
-      label: Informations supplémentaires
-      description: Ajoutez ici toute information ou capture d'écran qui pourrait être utile.
-      placeholder: Lien, message d'erreur, etc.
+      label: Étapes pour reproduire le bug
+      description: Décrivez les étapes nécessaires pour reproduire le bug.
+      placeholder: |
+        1. Allez à '...'
+        2. Cliquez sur '...'
+        3. Observez le problème.

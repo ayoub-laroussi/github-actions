@@ -1,0 +1,47 @@
+name: Bug report
+description: Signaler un problème dans le projet
+title: "[BUG] Décrivez le problème"
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de nous aider à améliorer le projet en signalant ce problème !
+
+  - type: input
+    id: description
+    attributes:
+      label: Description du bug
+      description: Décrivez le problème rencontré.
+      placeholder: Entrez une description claire du problème.
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Étapes pour reproduire
+      description: Liste des étapes nécessaires pour reproduire le problème.
+      placeholder: Expliquez les étapes (1. Faites ceci, 2. Cliquez sur cela, ...).
+      required: true
+
+  - type: input
+    id: expected_behavior
+    attributes:
+      label: Comportement attendu
+      description: Décrivez ce que vous attendiez au lieu du bug rencontré.
+      placeholder: Le comportement attendu.
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environnement
+      description: Informations sur votre environnement (OS, navigateur, version...).
+      placeholder: Exemple : macOS, Firefox 105.0, version 1.2.3.
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Informations supplémentaires
+      description: Ajoutez ici toute information ou capture d'écran qui pourrait être utile.
+      placeholder: Lien, message d'erreur, etc.

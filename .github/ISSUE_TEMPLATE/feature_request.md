@@ -1,19 +1,39 @@
----
 name: Feature request
-about: Suggérer une idée pour ce projet
-title: "[FEATURE] Décrire votre suggestion"
-labels: enhancement
-assignees: ''
----
+description: Suggérer une nouvelle idée ou fonctionnalité
+title: "[FEATURE] Décrivez votre idée"
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de partager vos idées pour améliorer ce projet !
 
-**Description de la fonctionnalité souhaitée**
-Décrivez clairement ce que vous voulez.
+  - type: input
+    id: feature_description
+    attributes:
+      label: Description de la fonctionnalité
+      description: Expliquez clairement ce que vous proposez.
+      placeholder: Décrivez votre idée ou fonctionnalité souhaitée.
+      required: true
 
-**Pourquoi est-ce utile ?**
-Expliquez pourquoi cette fonctionnalité est importante.
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Cas d'utilisation
+      description: Expliquez pourquoi cette fonctionnalité serait utile.
+      placeholder: Donnez un exemple concret ou un contexte.
 
-**Approche possible**
-Ajoutez vos idées ou une approche technique.
+  - type: textarea
+    id: possible_approach
+    attributes:
+      label: Approche possible
+      description: Partagez vos idées sur la façon de mettre en œuvre cette fonctionnalité.
+      placeholder: Décrivez les étapes ou l'implémentation technique si vous en avez une idée.
 
-**Informations supplémentaires**
-Ajoutez ici des schémas, liens ou autres ressources pertinentes.
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Informations supplémentaires
+      description: Ajoutez tout ce qui pourrait être pertinent (liens, schémas, etc.).
+      placeholder: Autres détails ici.

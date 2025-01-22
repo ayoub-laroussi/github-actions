@@ -4,7 +4,7 @@ title: "[BUG] Décrivez le problème"
 labels:
   - bug
 body:
-  - type: yml
+  - type: markdown
     attributes:
       value: |
         Merci de nous aider à améliorer le projet en signalant ce problème !

@@ -1,30 +1,47 @@
----
 name: Bug report
-about: Signaler un bug pour améliorer le projet
-title: "[BUG] Décrire brièvement le problème"
-labels: bug
-assignees: ''
----
+description: Signaler un problème dans le projet
+title: "[BUG] Décrivez le problème"
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de nous aider à améliorer le projet en signalant ce problème !
 
-**Description du bug**
-Une description claire et concise du problème.
+  - type: input
+    id: description
+    attributes:
+      label: Description du bug
+      description: Décrivez le problème rencontré.
+      placeholder: Entrez une description claire du problème.
+      required: true
 
-**Étapes pour reproduire**
-1. Allez à '...'
-2. Cliquez sur '...'
-3. Faites '...'
-4. Voyez l'erreur
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Étapes pour reproduire
+      description: Liste des étapes nécessaires pour reproduire le problème.
+      placeholder: Expliquez les étapes (1. Faites ceci, 2. Cliquez sur cela, ...).
+      required: true
 
-**Comportement attendu**
-Décrivez ce que vous attendiez.
+  - type: input
+    id: expected_behavior
+    attributes:
+      label: Comportement attendu
+      description: Décrivez ce que vous attendiez au lieu du bug rencontré.
+      placeholder: Le comportement attendu.
 
-**Capture d'écran**
-Ajoutez des captures d'écran si possible.
+  - type: input
+    id: environment
+    attributes:
+      label: Environnement
+      description: Informations sur votre environnement (OS, navigateur, version...).
+      placeholder: Exemple : macOS, Firefox 105.0, version 1.2.3.
 
-**Environnement :**
-- OS : [ex. Windows, macOS, Linux]
-- Navigateur [ex. Chrome, Firefox]
-- Version [ex. 1.0.0]
-
-**Informations supplémentaires**
-Ajoutez d'autres informations utiles ici.
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Informations supplémentaires
+      description: Ajoutez ici toute information ou capture d'écran qui pourrait être utile.
+      placeholder: Lien, message d'erreur, etc.
